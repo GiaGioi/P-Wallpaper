@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">P Wallpaper</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="information">Information</string>
+    <string name="share">Share</string>
+    <string name="wallpaper">Wallpaper</string>
+    <string name="favorite">Favorite</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <string name="title_shop">Home</string>
+    <string name="title_gifts">Category</string>
+    <string name="title_cart">Favorite</string>
+    <string name="toast">Nhấn một lần nữa để thoát!</string>
+    <string name="download">Download</string>
+    <string name="action_search">Search</string>
+</resources>

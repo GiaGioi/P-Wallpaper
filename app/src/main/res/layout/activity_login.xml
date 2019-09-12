@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.gioidev.assignment403.Activities.LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:fitsSystemWindows="true"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:id="@+id/viewLogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="-10dp"
+        android:background="@drawable/bg_shadow"
+        android:fitsSystemWindows="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:src="@drawable/splash"
+            android:text="Foodybite"
+            android:textColor="#FFF"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="280dp"
+        android:orientation="vertical">
+
+        <com.gioidev.assignment403.Utils.DrawableRightEditText
+            android:id="@+id/username"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bginput"
+            android:drawableLeft="@drawable/ic_mail"
+            android:drawableRight="@drawable/iconfinder_clear_text"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:hint="Email"
+            android:padding="15dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="19sp"
+            app:showRightDrawable="false" />
+
+
+        <com.gioidev.assignment403.Utils.DrawableRightEditText
+            android:id="@+id/password"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bginput"
+            android:drawableLeft="@drawable/ic_pass"
+            android:drawableRight="@drawable/iconfinder_clear_text"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            app:showRightDrawable="false" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/gradient_login"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:gravity="center"
+            android:onClick="login"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvCreateAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:padding="10dp"
+            android:text="Create New Account"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="160dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="@color/colorWhite" />
+    </LinearLayout>
+</RelativeLayout>
