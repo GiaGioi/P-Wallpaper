@@ -23,9 +23,9 @@
         android:usesCleartextTraffic="true">
         <activity
             android:theme="@style/Theme.Design.NoActionBar"
-            android:name=".Activities.SearchActivity"></activity>
+            android:name=".Activities.SearchActivity"/>
         <activity android:name=".Activities.SignInActivity" />
-        <activity android:name=".Activities.LoginActivity"></activity>
+        <activity android:name=".Activities.LoginActivity"/>
         <activity android:name=".Activities.InfoActivity" />
         <activity android:name=".Activities.SplashActivity">
             <intent-filter>

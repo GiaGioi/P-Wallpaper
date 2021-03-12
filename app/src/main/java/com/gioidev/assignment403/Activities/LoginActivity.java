@@ -139,15 +139,15 @@ public class LoginActivity extends AppCompatActivity {
     public void login(View view) {
         String username = edtusername.getText().toString();
         if(TextUtils.isEmpty(username)) {
-            edtusername.setError("bạn không được để trống");
+            edtusername.setError("Bạn không được để trống");
             return;
         }
         String password = edtpassword.getText().toString();
         if(TextUtils.isEmpty(password)) {
-            edtpassword.setError("bạn không được để trống");
+            edtpassword.setError("Bạn không được để trống");
             return;
         }
-        ACProgressFlower dialog = new ACProgressFlower.Builder(LoginActivity.this)
+        final ACProgressFlower dialog = new ACProgressFlower.Builder(LoginActivity.this)
                 .direction(ACProgressConstant.DIRECT_CLOCKWISE)
                 .themeColor(Color.WHITE)
                 .text("Đang đăng nhập...")
@@ -165,7 +165,8 @@ public class LoginActivity extends AppCompatActivity {
                             startActivity(intent);
                         }
                         else{
-                            Toast.makeText(LoginActivity.this,"đăng nhập thất bại",Toast.LENGTH_LONG).show();
+                            dialog.cancel();
+                            Toast.makeText(LoginActivity.this,"Đăng nhập thất bại",Toast.LENGTH_LONG).show();
                         }
                     }
                 });

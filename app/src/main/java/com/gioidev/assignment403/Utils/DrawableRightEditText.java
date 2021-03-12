@@ -39,7 +39,6 @@ public class DrawableRightEditText extends EditText implements TextWatcher, View
         typedArray.recycle();
         init(isshowRightDrawable);
     }
-    //初始化view
     private void init(boolean showRightDrawable) {
         drawable = this.getCompoundDrawables()[2];
         this.addTextChangedListener(this);

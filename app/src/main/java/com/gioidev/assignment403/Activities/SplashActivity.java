@@ -8,6 +8,7 @@ import android.os.Handler;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
+import androidx.multidex.MultiDex;
 
 import com.gioidev.assignment403.R;
 
@@ -18,7 +19,7 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-
+        MultiDex.install(this);
 
         new Handler().postDelayed (new Runnable() {
             @Override
